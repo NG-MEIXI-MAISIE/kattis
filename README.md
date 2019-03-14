@@ -1,0 +1,2 @@
+# kattis
+KATTIS_SOLUTIONS

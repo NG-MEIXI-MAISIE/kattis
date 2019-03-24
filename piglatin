@@ -1,0 +1,13 @@
+import sys
+
+def piglatinfy(s):
+    if s[0] in ['a','e','i','o','u','y']:
+        s=s+"yay"
+        return (s)
+    else:
+         for letter in s:
+            if letter in 'aeiouy':
+                ans= (s[s.index(letter):] + s[:s.index(letter)] +'ay')
+                return(ans)
+for line in sys.stdin:
+    print(" ".join(map(piglatinfy, line.split())))
